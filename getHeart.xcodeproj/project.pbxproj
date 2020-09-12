@@ -1,0 +1,876 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCD02152250D434600CF65B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD02151250D434600CF65B4 /* AppDelegate.swift */; };
+		DCD02154250D434600CF65B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD02153250D434600CF65B4 /* SceneDelegate.swift */; };
+		DCD02156250D434600CF65B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD02155250D434600CF65B4 /* ViewController.swift */; };
+		DCD02159250D434600CF65B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD02157250D434600CF65B4 /* Main.storyboard */; };
+		DCD0215B250D434800CF65B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD0215A250D434800CF65B4 /* Assets.xcassets */; };
+		DCD0215E250D434800CF65B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD0215C250D434800CF65B4 /* LaunchScreen.storyboard */; };
+		DCD02169250D434800CF65B4 /* getHeartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD02168250D434800CF65B4 /* getHeartTests.swift */; };
+		DCD02174250D434800CF65B4 /* getHeartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD02173250D434800CF65B4 /* getHeartUITests.swift */; };
+		DCD02179250D434800CF65B4 /* getHeart WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DCD02178250D434800CF65B4 /* getHeart WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DCD0217F250D434800CF65B4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD0217D250D434800CF65B4 /* Interface.storyboard */; };
+		DCD02181250D434900CF65B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD02180250D434900CF65B4 /* Assets.xcassets */; };
+		DCD02188250D434900CF65B4 /* getHeart WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DCD02187250D434900CF65B4 /* getHeart WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DCD0218D250D434900CF65B4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0218C250D434900CF65B4 /* InterfaceController.swift */; };
+		DCD0218F250D434900CF65B4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0218E250D434900CF65B4 /* ExtensionDelegate.swift */; };
+		DCD02191250D434900CF65B4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD02190250D434900CF65B4 /* NotificationController.swift */; };
+		DCD02193250D434B00CF65B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD02192250D434B00CF65B4 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCD02165250D434800CF65B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD02146250D434600CF65B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCD0214D250D434600CF65B4;
+			remoteInfo = getHeart;
+		};
+		DCD02170250D434800CF65B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD02146250D434600CF65B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCD0214D250D434600CF65B4;
+			remoteInfo = getHeart;
+		};
+		DCD0217A250D434800CF65B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD02146250D434600CF65B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCD02177250D434800CF65B4;
+			remoteInfo = "getHeart WatchKit App";
+		};
+		DCD02189250D434900CF65B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD02146250D434600CF65B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCD02186250D434900CF65B4;
+			remoteInfo = "getHeart WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCD0219B250D434B00CF65B4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DCD02188250D434900CF65B4 /* getHeart WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD0219F250D434B00CF65B4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DCD02179250D434800CF65B4 /* getHeart WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DCD0214E250D434600CF65B4 /* getHeart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = getHeart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD02151250D434600CF65B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCD02153250D434600CF65B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DCD02155250D434600CF65B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCD02158250D434600CF65B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCD0215A250D434800CF65B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCD0215D250D434800CF65B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCD0215F250D434800CF65B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD02164250D434800CF65B4 /* getHeartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = getHeartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD02168250D434800CF65B4 /* getHeartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getHeartTests.swift; sourceTree = "<group>"; };
+		DCD0216A250D434800CF65B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD0216F250D434800CF65B4 /* getHeartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = getHeartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD02173250D434800CF65B4 /* getHeartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getHeartUITests.swift; sourceTree = "<group>"; };
+		DCD02175250D434800CF65B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD02178250D434800CF65B4 /* getHeart WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "getHeart WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD0217E250D434800CF65B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DCD02180250D434900CF65B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCD02182250D434900CF65B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD02187250D434900CF65B4 /* getHeart WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "getHeart WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD0218C250D434900CF65B4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DCD0218E250D434900CF65B4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DCD02190250D434900CF65B4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DCD02192250D434B00CF65B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCD02194250D434B00CF65B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD02195250D434B00CF65B4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCD0214B250D434600CF65B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD02161250D434800CF65B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD0216C250D434800CF65B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD02184250D434900CF65B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCD02145250D434600CF65B4 = {
+			isa = PBXGroup;
+			children = (
+				DCD02150250D434600CF65B4 /* getHeart */,
+				DCD02167250D434800CF65B4 /* getHeartTests */,
+				DCD02172250D434800CF65B4 /* getHeartUITests */,
+				DCD0217C250D434800CF65B4 /* getHeart WatchKit App */,
+				DCD0218B250D434900CF65B4 /* getHeart WatchKit Extension */,
+				DCD0214F250D434600CF65B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCD0214F250D434600CF65B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0214E250D434600CF65B4 /* getHeart.app */,
+				DCD02164250D434800CF65B4 /* getHeartTests.xctest */,
+				DCD0216F250D434800CF65B4 /* getHeartUITests.xctest */,
+				DCD02178250D434800CF65B4 /* getHeart WatchKit App.app */,
+				DCD02187250D434900CF65B4 /* getHeart WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD02150250D434600CF65B4 /* getHeart */ = {
+			isa = PBXGroup;
+			children = (
+				DCD02151250D434600CF65B4 /* AppDelegate.swift */,
+				DCD02153250D434600CF65B4 /* SceneDelegate.swift */,
+				DCD02155250D434600CF65B4 /* ViewController.swift */,
+				DCD02157250D434600CF65B4 /* Main.storyboard */,
+				DCD0215A250D434800CF65B4 /* Assets.xcassets */,
+				DCD0215C250D434800CF65B4 /* LaunchScreen.storyboard */,
+				DCD0215F250D434800CF65B4 /* Info.plist */,
+			);
+			path = getHeart;
+			sourceTree = "<group>";
+		};
+		DCD02167250D434800CF65B4 /* getHeartTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCD02168250D434800CF65B4 /* getHeartTests.swift */,
+				DCD0216A250D434800CF65B4 /* Info.plist */,
+			);
+			path = getHeartTests;
+			sourceTree = "<group>";
+		};
+		DCD02172250D434800CF65B4 /* getHeartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DCD02173250D434800CF65B4 /* getHeartUITests.swift */,
+				DCD02175250D434800CF65B4 /* Info.plist */,
+			);
+			path = getHeartUITests;
+			sourceTree = "<group>";
+		};
+		DCD0217C250D434800CF65B4 /* getHeart WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0217D250D434800CF65B4 /* Interface.storyboard */,
+				DCD02180250D434900CF65B4 /* Assets.xcassets */,
+				DCD02182250D434900CF65B4 /* Info.plist */,
+			);
+			path = "getHeart WatchKit App";
+			sourceTree = "<group>";
+		};
+		DCD0218B250D434900CF65B4 /* getHeart WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DCD0218C250D434900CF65B4 /* InterfaceController.swift */,
+				DCD0218E250D434900CF65B4 /* ExtensionDelegate.swift */,
+				DCD02190250D434900CF65B4 /* NotificationController.swift */,
+				DCD02192250D434B00CF65B4 /* Assets.xcassets */,
+				DCD02194250D434B00CF65B4 /* Info.plist */,
+				DCD02195250D434B00CF65B4 /* PushNotificationPayload.apns */,
+			);
+			path = "getHeart WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCD0214D250D434600CF65B4 /* getHeart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD021A0250D434B00CF65B4 /* Build configuration list for PBXNativeTarget "getHeart" */;
+			buildPhases = (
+				DCD0214A250D434600CF65B4 /* Sources */,
+				DCD0214B250D434600CF65B4 /* Frameworks */,
+				DCD0214C250D434600CF65B4 /* Resources */,
+				DCD0219F250D434B00CF65B4 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCD0217B250D434800CF65B4 /* PBXTargetDependency */,
+			);
+			name = getHeart;
+			productName = getHeart;
+			productReference = DCD0214E250D434600CF65B4 /* getHeart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCD02163250D434800CF65B4 /* getHeartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD021A3250D434B00CF65B4 /* Build configuration list for PBXNativeTarget "getHeartTests" */;
+			buildPhases = (
+				DCD02160250D434800CF65B4 /* Sources */,
+				DCD02161250D434800CF65B4 /* Frameworks */,
+				DCD02162250D434800CF65B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCD02166250D434800CF65B4 /* PBXTargetDependency */,
+			);
+			name = getHeartTests;
+			productName = getHeartTests;
+			productReference = DCD02164250D434800CF65B4 /* getHeartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCD0216E250D434800CF65B4 /* getHeartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD021A6250D434B00CF65B4 /* Build configuration list for PBXNativeTarget "getHeartUITests" */;
+			buildPhases = (
+				DCD0216B250D434800CF65B4 /* Sources */,
+				DCD0216C250D434800CF65B4 /* Frameworks */,
+				DCD0216D250D434800CF65B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCD02171250D434800CF65B4 /* PBXTargetDependency */,
+			);
+			name = getHeartUITests;
+			productName = getHeartUITests;
+			productReference = DCD0216F250D434800CF65B4 /* getHeartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		DCD02177250D434800CF65B4 /* getHeart WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD0219C250D434B00CF65B4 /* Build configuration list for PBXNativeTarget "getHeart WatchKit App" */;
+			buildPhases = (
+				DCD02176250D434800CF65B4 /* Resources */,
+				DCD0219B250D434B00CF65B4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCD0218A250D434900CF65B4 /* PBXTargetDependency */,
+			);
+			name = "getHeart WatchKit App";
+			productName = "getHeart WatchKit App";
+			productReference = DCD02178250D434800CF65B4 /* getHeart WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DCD02186250D434900CF65B4 /* getHeart WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD02198250D434B00CF65B4 /* Build configuration list for PBXNativeTarget "getHeart WatchKit Extension" */;
+			buildPhases = (
+				DCD02183250D434900CF65B4 /* Sources */,
+				DCD02184250D434900CF65B4 /* Frameworks */,
+				DCD02185250D434900CF65B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "getHeart WatchKit Extension";
+			productName = "getHeart WatchKit Extension";
+			productReference = DCD02187250D434900CF65B4 /* getHeart WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCD02146250D434600CF65B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "terada enishi";
+				TargetAttributes = {
+					DCD0214D250D434600CF65B4 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					DCD02163250D434800CF65B4 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = DCD0214D250D434600CF65B4;
+					};
+					DCD0216E250D434800CF65B4 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = DCD0214D250D434600CF65B4;
+					};
+					DCD02177250D434800CF65B4 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					DCD02186250D434900CF65B4 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = DCD02149250D434600CF65B4 /* Build configuration list for PBXProject "getHeart" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCD02145250D434600CF65B4;
+			productRefGroup = DCD0214F250D434600CF65B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCD0214D250D434600CF65B4 /* getHeart */,
+				DCD02163250D434800CF65B4 /* getHeartTests */,
+				DCD0216E250D434800CF65B4 /* getHeartUITests */,
+				DCD02177250D434800CF65B4 /* getHeart WatchKit App */,
+				DCD02186250D434900CF65B4 /* getHeart WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCD0214C250D434600CF65B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD0215E250D434800CF65B4 /* LaunchScreen.storyboard in Resources */,
+				DCD0215B250D434800CF65B4 /* Assets.xcassets in Resources */,
+				DCD02159250D434600CF65B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD02162250D434800CF65B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD0216D250D434800CF65B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD02176250D434800CF65B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD02181250D434900CF65B4 /* Assets.xcassets in Resources */,
+				DCD0217F250D434800CF65B4 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD02185250D434900CF65B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD02193250D434B00CF65B4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCD0214A250D434600CF65B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD02156250D434600CF65B4 /* ViewController.swift in Sources */,
+				DCD02152250D434600CF65B4 /* AppDelegate.swift in Sources */,
+				DCD02154250D434600CF65B4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD02160250D434800CF65B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD02169250D434800CF65B4 /* getHeartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD0216B250D434800CF65B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD02174250D434800CF65B4 /* getHeartUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD02183250D434900CF65B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD02191250D434900CF65B4 /* NotificationController.swift in Sources */,
+				DCD0218F250D434900CF65B4 /* ExtensionDelegate.swift in Sources */,
+				DCD0218D250D434900CF65B4 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCD02166250D434800CF65B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCD0214D250D434600CF65B4 /* getHeart */;
+			targetProxy = DCD02165250D434800CF65B4 /* PBXContainerItemProxy */;
+		};
+		DCD02171250D434800CF65B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCD0214D250D434600CF65B4 /* getHeart */;
+			targetProxy = DCD02170250D434800CF65B4 /* PBXContainerItemProxy */;
+		};
+		DCD0217B250D434800CF65B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCD02177250D434800CF65B4 /* getHeart WatchKit App */;
+			targetProxy = DCD0217A250D434800CF65B4 /* PBXContainerItemProxy */;
+		};
+		DCD0218A250D434900CF65B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCD02186250D434900CF65B4 /* getHeart WatchKit Extension */;
+			targetProxy = DCD02189250D434900CF65B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCD02157250D434600CF65B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD02158250D434600CF65B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCD0215C250D434800CF65B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD0215D250D434800CF65B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DCD0217D250D434800CF65B4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCD0217E250D434800CF65B4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCD02196250D434B00CF65B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCD02197250D434B00CF65B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCD02199250D434B00CF65B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				INFOPLIST_FILE = "getHeart WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.templebond.getHeart.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		DCD0219A250D434B00CF65B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				INFOPLIST_FILE = "getHeart WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.templebond.getHeart.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		DCD0219D250D434B00CF65B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				IBSC_MODULE = getHeart_WatchKit_Extension;
+				INFOPLIST_FILE = "getHeart WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.templebond.getHeart.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		DCD0219E250D434B00CF65B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				IBSC_MODULE = getHeart_WatchKit_Extension;
+				INFOPLIST_FILE = "getHeart WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.templebond.getHeart.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		DCD021A1250D434B00CF65B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				INFOPLIST_FILE = getHeart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.templebond.getHeart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCD021A2250D434B00CF65B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				INFOPLIST_FILE = getHeart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.templebond.getHeart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DCD021A4250D434B00CF65B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				INFOPLIST_FILE = getHeartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.templebond.getHeartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/getHeart.app/getHeart";
+			};
+			name = Debug;
+		};
+		DCD021A5250D434B00CF65B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				INFOPLIST_FILE = getHeartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.templebond.getHeartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/getHeart.app/getHeart";
+			};
+			name = Release;
+		};
+		DCD021A7250D434B00CF65B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				INFOPLIST_FILE = getHeartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.templebond.getHeartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = getHeart;
+			};
+			name = Debug;
+		};
+		DCD021A8250D434B00CF65B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				INFOPLIST_FILE = getHeartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.templebond.getHeartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = getHeart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCD02149250D434600CF65B4 /* Build configuration list for PBXProject "getHeart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD02196250D434B00CF65B4 /* Debug */,
+				DCD02197250D434B00CF65B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD02198250D434B00CF65B4 /* Build configuration list for PBXNativeTarget "getHeart WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD02199250D434B00CF65B4 /* Debug */,
+				DCD0219A250D434B00CF65B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD0219C250D434B00CF65B4 /* Build configuration list for PBXNativeTarget "getHeart WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD0219D250D434B00CF65B4 /* Debug */,
+				DCD0219E250D434B00CF65B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD021A0250D434B00CF65B4 /* Build configuration list for PBXNativeTarget "getHeart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD021A1250D434B00CF65B4 /* Debug */,
+				DCD021A2250D434B00CF65B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD021A3250D434B00CF65B4 /* Build configuration list for PBXNativeTarget "getHeartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD021A4250D434B00CF65B4 /* Debug */,
+				DCD021A5250D434B00CF65B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD021A6250D434B00CF65B4 /* Build configuration list for PBXNativeTarget "getHeartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD021A7250D434B00CF65B4 /* Debug */,
+				DCD021A8250D434B00CF65B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCD02146250D434600CF65B4 /* Project object */;
+}
