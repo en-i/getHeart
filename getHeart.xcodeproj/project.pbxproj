@@ -23,6 +23,8 @@
 		DCD0218F250D434900CF65B4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0218E250D434900CF65B4 /* ExtensionDelegate.swift */; };
 		DCD02191250D434900CF65B4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD02190250D434900CF65B4 /* NotificationController.swift */; };
 		DCD02193250D434B00CF65B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD02192250D434B00CF65B4 /* Assets.xcassets */; };
+		DCD021AC250D436400CF65B4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD021AB250D436400CF65B4 /* HealthKit.framework */; };
+		DCD021AF250D437100CF65B4 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD021AE250D437100CF65B4 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,10 @@
 		DCD02192250D434B00CF65B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCD02194250D434B00CF65B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCD02195250D434B00CF65B4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DCD021A9250D436400CF65B4 /* getHeart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = getHeart.entitlements; sourceTree = "<group>"; };
+		DCD021AB250D436400CF65B4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		DCD021AD250D437100CF65B4 /* getHeart WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "getHeart WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		DCD021AE250D437100CF65B4 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD021AC250D436400CF65B4 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD021AF250D437100CF65B4 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +158,7 @@
 				DCD0217C250D434800CF65B4 /* getHeart WatchKit App */,
 				DCD0218B250D434900CF65B4 /* getHeart WatchKit Extension */,
 				DCD0214F250D434600CF65B4 /* Products */,
+				DCD021AA250D436400CF65B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +177,7 @@
 		DCD02150250D434600CF65B4 /* getHeart */ = {
 			isa = PBXGroup;
 			children = (
+				DCD021A9250D436400CF65B4 /* getHeart.entitlements */,
 				DCD02151250D434600CF65B4 /* AppDelegate.swift */,
 				DCD02153250D434600CF65B4 /* SceneDelegate.swift */,
 				DCD02155250D434600CF65B4 /* ViewController.swift */,
@@ -210,6 +220,7 @@
 		DCD0218B250D434900CF65B4 /* getHeart WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DCD021AD250D437100CF65B4 /* getHeart WatchKit Extension.entitlements */,
 				DCD0218C250D434900CF65B4 /* InterfaceController.swift */,
 				DCD0218E250D434900CF65B4 /* ExtensionDelegate.swift */,
 				DCD02190250D434900CF65B4 /* NotificationController.swift */,
@@ -218,6 +229,15 @@
 				DCD02195250D434B00CF65B4 /* PushNotificationPayload.apns */,
 			);
 			path = "getHeart WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		DCD021AA250D436400CF65B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCD021AE250D437100CF65B4 /* HealthKit.framework */,
+				DCD021AB250D436400CF65B4 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,7 +567,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -601,7 +621,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -615,8 +635,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "getHeart WatchKit Extension/getHeart WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = "getHeart WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -637,8 +658,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "getHeart WatchKit Extension/getHeart WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = "getHeart WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -661,7 +683,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				IBSC_MODULE = getHeart_WatchKit_Extension;
 				INFOPLIST_FILE = "getHeart WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.templebond.getHeart.watchkitapp;
@@ -680,7 +702,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				IBSC_MODULE = getHeart_WatchKit_Extension;
 				INFOPLIST_FILE = "getHeart WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.templebond.getHeart.watchkitapp;
@@ -697,8 +719,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = getHeart/getHeart.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = getHeart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -715,8 +738,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = getHeart/getHeart.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = getHeart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -735,7 +759,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = getHeartTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -757,7 +781,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = getHeartTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -778,7 +802,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = getHeartUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -798,7 +822,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XTTKXXA2TB;
+				DEVELOPMENT_TEAM = N8CX38UQC4;
 				INFOPLIST_FILE = getHeartUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
